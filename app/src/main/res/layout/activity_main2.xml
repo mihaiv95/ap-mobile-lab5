@@ -5,14 +5,24 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity2">
+
+    <EditText
+        android:id="@+id/E1_Raspuns"
+        android:layout_width="193dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="340dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/T2_Receptionat"
-        android:layout_width="198dp"
-        android:layout_height="26dp"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="408dp"
+        android:id="@+id/T1_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Fereastra 2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -20,24 +30,14 @@
         android:id="@+id/T1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Fereastra 1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/T2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="104dp"
-        android:text="Text pentru a fi transmis"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="100dp"
+        android:text="Primit: "
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/E1"
+        android:id="@+id/T1R"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -48,23 +48,24 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/B1_Trimite"
+        android:id="@+id/B1_Raspunde"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="236dp"
-        android:text="TRIMITE MESAJ – FEREASTRA 2"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="488dp"
+        android:text="Trimite raspuns"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/T2_2"
+        android:id="@+id/T2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
-        android:layout_marginTop="304dp"
-        android:text="Text receptionat"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="244dp"
+        android:text="Raspunde"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
