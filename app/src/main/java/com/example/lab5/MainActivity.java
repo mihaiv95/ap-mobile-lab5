@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     EditText e1; // e1 obiectul cutie de editare
     TextView t1; // obiectul text
 
+    Button goTo;
+
     void afis(String sir) // functie pentru afisarea unui mesaj
     {
         Toast.makeText(getApplicationContext(), sir, Toast.LENGTH_SHORT).show();
@@ -31,6 +33,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         b1 = (Button) findViewById(R.id.B1_Trimite); //instantiere clasa ptr. buton
         t1 = (TextView) findViewById(R.id.T2_Receptionat); //instantiere clasa pentru afisare text (needitabila)
         b1.setOnClickListener(this); // asignare metoda Click ptr. obiectul fereastra curent
+        goTo = (Button) findViewById(R.id.button);
+        goTo.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                //utilizarea intenției
+                Intent intent = new Intent(v.getContext(), MainActivity3.class);
+                v.getContext().startActivity(intent);
+            }
+        });
     }
 
     public void onClick(View v) { //redefinire metoda Click
@@ -57,4 +69,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }
     }
+
 }
